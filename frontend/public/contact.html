@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Trinaaya Consultancy</title>
+  <meta name="description" content="Get in touch with Trinaaya Consultancy. Schedule a free financial consultation or reach us via WhatsApp.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><div><span class="logo-text">Trinaaya</span><span class="logo-tag">Consultancy Pvt Ltd</span></div></a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="contact.html" class="btn-contact active">Contact Us</a></li>
+        </ul>
+        <button class="mobile-toggle"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+      <a href="solutions.html">Solutions</a><a href="testimonials.html">Testimonials</a><a href="tools.html">Tools</a><a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" data-testid="contact-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Let's start a conversation about your financial goals. We're just a message away.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" data-testid="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h2 class="section-title" style="font-size:1.6rem;">Get in <span class="accent">Touch</span></h2>
+          <p style="color:var(--text-light);margin-bottom:24px;">Reach out to us via any channel. We typically respond within 2 hours during business hours.</p>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Office Address</h4>
+              <p>J 1204, Corona Optus<br>Sec 37 C, Gurugram, Haryana</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:kunal.handa@trinaaya.com">kunal.handa@trinaaya.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+919958973636">+91 9958973636</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/918360073636" target="_blank">+91 8360073636</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-card" style="border-bottom:none;">
+            <div class="contact-info-icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <h4>Website</h4>
+              <p><a href="https://trinaaya.com" target="_blank">trinaaya.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Send Us a Message</h3>
+          <form class="whatsapp-form" data-testid="contact-form">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone Number</label>
+              <input type="tel" id="contactPhone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            <div class="form-group">
+              <label for="contactRequirement">Requirement</label>
+              <select id="contactRequirement" name="requirement">
+                <option value="">Select your requirement</option>
+                <option value="Debt Funding">Debt Funding</option>
+                <option value="Equity Funding">Equity Funding</option>
+                <option value="Financial Structuring">Financial Structuring</option>
+                <option value="Strategic Advisory">Strategic Advisory</option>
+                <option value="Home Loan">Home Loan</option>
+                <option value="Personal Loan">Personal Loan</option>
+                <option value="MSME Loan">MSME Loan</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" placeholder="Tell us about your requirement..." rows="4"></textarea>
+            </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <button type="submit" class="btn btn-whatsapp" data-testid="contact-submit-whatsapp">
+                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+              </button>
+              <a href="tel:+919958973636" class="btn btn-dark">
+                <i class="fas fa-phone"></i> Call Us Now
+              </a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" data-testid="contact-cta">
+    <div class="container">
+      <h2>Prefer a Quick Chat?</h2>
+      <p>WhatsApp us directly for a faster response. We're available Monday to Saturday, 9 AM to 7 PM.</p>
+      <a href="https://wa.me/918360073636?text=Hi! I'd like to discuss my financial requirements with Trinaaya." target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><a href="index.html" class="footer-logo">Trinaaya</a><p>Bringing 16+ years of banking expertise to help individuals, businesses, and startups access the right funding.</p><div class="footer-social"><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div></div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="tools.html">Tools</a></li></ul></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Debt Funding</a></li><li><a href="services.html">Equity Funding</a></li><li><a href="services.html">Financial Structuring</a></li><li><a href="services.html">Strategic Advisory</a></li></ul></div>
+        <div class="footer-col"><h4>Contact Us</h4><div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>J 1204, Corona Optus, Sec 37 C, Gurugram</span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:kunal.handa@trinaaya.com">kunal.handa@trinaaya.com</a></div><div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+919958973636">+91 9958973636</a></div><div class="footer-contact-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/918360073636" target="_blank">+91 8360073636</a></div></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2024 Trinaaya Consultancy Pvt Ltd. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <div class="floating-buttons">
+    <a href="https://wa.me/918360073636" target="_blank" class="float-btn whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919958973636" class="float-btn phone" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
