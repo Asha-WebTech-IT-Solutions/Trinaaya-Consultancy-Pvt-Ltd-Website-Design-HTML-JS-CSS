@@ -316,14 +316,15 @@ input, select, textarea { font-family: inherit; }
   gap: 32px;
 }
 .partner-logo {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-lighter);
-  opacity: 0.6;
+  height: 36px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  opacity: 0.7;
   transition: var(--transition);
-  white-space: nowrap;
+  filter: grayscale(30%);
 }
-.partner-logo:hover { opacity: 1; color: var(--primary); }
+.partner-logo:hover { opacity: 1; filter: grayscale(0%); }
 
 /* ==================== SERVICE CARDS ==================== */
 .services-grid {
